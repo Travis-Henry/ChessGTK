@@ -1,10 +1,10 @@
+# Compiler and flags
 CC = gcc
 CFLAGS = $(shell pkg-config --cflags gtk4) -MMD -MP
 LDFLAGS = $(shell pkg-config --libs gtk4)
 
 # Directories
 SRC_DIR := src
-INCLUDE_DIR := include
 BUILD_DIR := build
 BIN_DIR := bin
 
@@ -21,7 +21,7 @@ all: $(TARGET)
 # Link the target
 $(TARGET): $(OBJS)
 	@mkdir -p $(BIN_DIR)
-	$(CC) $(LDFLAGS) -o $@ $^
+	$(CC) $(OBJS) -o $@ $(LDFLAGS)
 
 # Compile object files
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
@@ -36,7 +36,7 @@ clean:
 	rm -rf $(BUILD_DIR) $(BIN_DIR)
 
 run: $(TARGET)
-	$(TARGET)
+	./$(TARGET)
 
 # Phony targets
 .PHONY: all clean run
