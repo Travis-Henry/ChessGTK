@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<object class="GtkBox" id="main_menu">
+		<property name="orientation">vertical</property>
+		<child>
+			<object class="GtkButton" id="test">
+				<property name="label">Testing!</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkButton" id="test2">
+				<property name="label">Test Again</property>
+			</object>
+		</child>
+	</object>
+</interface>
