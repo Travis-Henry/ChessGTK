@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
 	<object class="GtkWindow" id="main_window">
-		<property name="title">GTK Chess!</property>	
-		<property name="default_width">400</property>
-		<property name="default_height">300</property>
+		<property name="title">ChessGTK</property>	
+		<property name="default_width">800</property>
+		<property name="default_height">600</property>
 		<property name="visible">true</property>
 
 		<child>

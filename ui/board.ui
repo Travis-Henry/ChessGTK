@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<object class="GtkBox" id="board_screen">
+		<property name="orientation">vertical</property>
+		<child>
+			<object class="GtkGrid" id="chess_board">
+				
+			</object>
+		</child>
+	</object>
+
+
+
+</interface>

@@ -1,3 +1,25 @@
 window {
 	background-color: green;
 }
+
+GtkBox button {
+	background-color: blue;
+}
+
+.board-square{
+	border: none;
+	border-radius: 0px;
+	min-width: 50px;
+	min-height: 50px;
+	background-image: none;
+}
+
+button.white-square{
+	background-color: #F5DEB3;
+}
+
+.black-square{
+	background-color: #8B4513;
+}
+
+
